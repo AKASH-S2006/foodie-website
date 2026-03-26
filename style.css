@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #ff4d4d;
+    padding: 15px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
