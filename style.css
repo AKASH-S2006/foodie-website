@@ -1,13 +1,14 @@
 body {
-    font-family: Arial;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     background: #ff4d4d;
-    padding: 15px;
+    padding: 15px 30px;
     color: white;
 }
 
@@ -17,27 +18,78 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #ff4d4d, #ff944d);
+    color: white;
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 30px;
+    gap: 20px;
 }
 
 .card {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    transition: transform 0.3s;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 30px;
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e60000;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
 }

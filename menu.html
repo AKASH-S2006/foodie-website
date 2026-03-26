@@ -6,18 +6,38 @@
 </head>
 <body>
 
-<h2>Menu</h2>
+<h2 class="title">Our Menu</h2>
 
 <div class="menu">
-    <div>
-        <h3>Pizza - ₹200</h3>
-        <button onclick="addToCart('Pizza',200)">Add</button>
+
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/200x150/?pizza">
+        <h3>Pizza</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Pizza',200)">Add to Cart</button>
     </div>
 
-    <div>
-        <h3>Burger - ₹100</h3>
-        <button onclick="addToCart('Burger',100)">Add</button>
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/200x150/?burger">
+        <h3>Burger</h3>
+        <p>₹100</p>
+        <button onclick="addToCart('Burger',100)">Add to Cart</button>
     </div>
+
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/200x150/?biryani">
+        <h3>Biryani</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Biryani',250)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/200x150/?pasta">
+        <h3>Pasta</h3>
+        <p>₹180</p>
+        <button onclick="addToCart('Pasta',180)">Add to Cart</button>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
